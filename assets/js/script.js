@@ -138,6 +138,19 @@ function displayMultiplyQuestion(operand1, operand2) {
     document.getElementById('operator').textContent = "x";
 }
 
+function displayDivisionQuestion(operand1, operand2) {
+    // Multiplying the operands
+    operand1 = operand1 * operand2;
+
+    // Display the values in HTML elements with respective IDs
+    document.getElementById("operand1").textContent = operand1;
+    document.getElementById("operand2").textContent = operand2;
+    document.getElementById("operator").textContent = "/";
+}
+
+// Example call to the function
+displayDivisionQuestion(10, 2);
+
 
 
 
